@@ -1,6 +1,7 @@
 class Chiritori < Formula
-  desc "A tool for finding and removing time-limited source code."
+  desc "Tool for removing time-limited source code"
   homepage "https://github.com/piyoppi/chiritori"
+  version "1.0.0-alpha.1"
   license "MIT"
 
   on_macos do
@@ -32,8 +33,10 @@ class Chiritori < Formula
   end
 
   test do
-    output = shell_output("echo 'a[marker name=\"f1\"]b[/marker]c' | chiritori --delimiter-start=\"[\" --delimiter-end=\"]\" --marker-removal-names=f1").strip
-        
+    output = shell_output(
+      "echo 'a[marker name=\"f1\"]b[/marker]c' | chiritori --delimiter-start=\"[\" --delimiter-end=\"]\" --marker-removal-names=f1",
+    ).strip
+
     assert_equal "ac", output
   end
 end
