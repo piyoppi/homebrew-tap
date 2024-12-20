@@ -1,30 +1,30 @@
 class Chiritori < Formula
   desc "Tool for removing time-limited source code"
   homepage "https://github.com/piyoppi/chiritori"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/piyoppi/chiritori/releases/download/v1.3.0/chiritori-darwin-arm64.tar.gz"
-      sha256 "6130e7a270280d5412cbdea315a76852c5ed956c9baa9aaa3dad1b1df2b07268"
+      url "https://github.com/piyoppi/chiritori/releases/download/v1.4.0/chiritori-darwin-arm64.tar.gz"
+      sha256 "629f4912d54efb983db23e08642bdb5429b6f71560e3da07cb75c960ae6214f1"
     end
 
     on_intel do
-      url "https://github.com/piyoppi/chiritori/releases/download/v1.3.0/chiritori-darwin-x86_64.tar.gz"
-      sha256 "c881b9fae32e5f1c67b0bc9fa8a8dcd2098e57e18bb8972ee2307ab4536edafe"
+      url "https://github.com/piyoppi/chiritori/releases/download/v1.4.0/chiritori-darwin-x86_64.tar.gz"
+      sha256 "1d38c619780c06e0427ed0b21d76eb9e76a0d466004f31676d98b3d7d6e4c62b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/piyoppi/chiritori/releases/download/v1.3.0/chiritori-linux-arm64-musl.tar.gz"
-      sha256 "738554cd9120420c874de3f14f2dc31777552d1e487c383ab6455643ac9e25ef"
+      url "https://github.com/piyoppi/chiritori/releases/download/v1.4.0/chiritori-linux-arm64-musl.tar.gz"
+      sha256 "c212e289138eb053d3fb6dfa385cfba810e66b017724673c8a8c09085c0880ce"
     end
 
     on_intel do
-      url "https://github.com/piyoppi/chiritori/releases/download/v1.3.0/chiritori-linux-x86_64-musl.tar.gz"
-      sha256 "a52aee72742aa55b198e12c2f537d96472217ea4ea28991c6201b6db01f7eb4e"
+      url "https://github.com/piyoppi/chiritori/releases/download/v1.4.0/chiritori-linux-x86_64-musl.tar.gz"
+      sha256 "9b893bd00a1d4dda355fb47a175fe805cb295118827cfa410fc7a77b692992f6"
     end
   end
 
